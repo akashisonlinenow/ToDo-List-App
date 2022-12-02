@@ -44,12 +44,12 @@ const App = () => {
                         {/* <li> {inputList} </li> */}
 
                         {Items.map( (itemval, index) => {
-                            return <ToDoLists 
+                            return <ToDoLists           //ToDoLists is a component made.
                             key={index}
                             id={index}
                             text={itemval} 
                             onSelect = {deleteItems}
-                            />;     //here text key id is a props     {/* return <li> {itemval} </li>; */}
+                            />     //here text key id is a props     {/* return <li> {itemval} </li>; */}
                         } )}
                     </ol>
                 </div>
